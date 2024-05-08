@@ -5,6 +5,7 @@ import './components/widget-container.js';
 import './components/ad-widget.js';
 import './components/login-widget.js';
 import './components/task-manager.js';
+import './components/calendar-widget.js'; // Import the Calendar widget
 
 /**
  * Comp2110TaskManager component constructs the main UI of the application
@@ -30,12 +31,12 @@ class Comp2110TaskManager extends LitElement {
       justify-content: space-between;
     }
 
-    .app-footer {
+   .app-footer {
       font-size: calc(12px + 0.5vmin);
       align-items: center;
     }
 
-    .app-footer a {
+   .app-footer a {
       margin-left: 5px;
     }
   `;
@@ -59,6 +60,7 @@ class Comp2110TaskManager extends LitElement {
           <widget-block header="Widget 1"></widget-block>
           <widget-block header="Widget 2"></widget-block>
           <widget-block header="Widget 3"></widget-block>
+          <calendar-widget></calendar-widget> // Add the Calendar widget
         </widget-container>
       </main>
 
